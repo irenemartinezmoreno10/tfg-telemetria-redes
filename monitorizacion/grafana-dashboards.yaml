@@ -1,0 +1,12 @@
+# Proveedor de dashboards de Grafana, al arrancar carga los JSON de
+# /var/lib/grafana/dashboards (ahí se monta dashboard.json) en la carpeta TFG
+
+apiVersion: 1
+
+providers:
+  - name: tfg
+    folder: TFG
+    type: file
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards

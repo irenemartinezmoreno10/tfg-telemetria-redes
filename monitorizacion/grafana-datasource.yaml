@@ -1,0 +1,16 @@
+# Data source de Grafana, se crea solo al arrancar
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB
+    uid: influxdb                         # identificador fijo: lo usa dashboard.json
+    type: influxdb
+    access: proxy
+    url: http://172.20.20.10:8086
+    isDefault: true
+    jsonData:
+      version: Flux
+      organization: tfg
+      defaultBucket: telemetria
+    secureJsonData:
+      token: tfg-token

@@ -1,0 +1,503 @@
+# Startup-config para configurar 100 subinterfaces sobre ethernet-1/1
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 vlan-tagging true
+set / interface ethernet-1/1 subinterface 1 type routed
+set / interface ethernet-1/1 subinterface 1 admin-state enable
+set / interface ethernet-1/1 subinterface 1 vlan encap single-tagged vlan-id 1
+set / interface ethernet-1/1 subinterface 1 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 1 ipv4 address 10.0.1.1/30
+set / interface ethernet-1/1 subinterface 2 type routed
+set / interface ethernet-1/1 subinterface 2 admin-state enable
+set / interface ethernet-1/1 subinterface 2 vlan encap single-tagged vlan-id 2
+set / interface ethernet-1/1 subinterface 2 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 2 ipv4 address 10.0.2.1/30
+set / interface ethernet-1/1 subinterface 3 type routed
+set / interface ethernet-1/1 subinterface 3 admin-state enable
+set / interface ethernet-1/1 subinterface 3 vlan encap single-tagged vlan-id 3
+set / interface ethernet-1/1 subinterface 3 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 3 ipv4 address 10.0.3.1/30
+set / interface ethernet-1/1 subinterface 4 type routed
+set / interface ethernet-1/1 subinterface 4 admin-state enable
+set / interface ethernet-1/1 subinterface 4 vlan encap single-tagged vlan-id 4
+set / interface ethernet-1/1 subinterface 4 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 4 ipv4 address 10.0.4.1/30
+set / interface ethernet-1/1 subinterface 5 type routed
+set / interface ethernet-1/1 subinterface 5 admin-state enable
+set / interface ethernet-1/1 subinterface 5 vlan encap single-tagged vlan-id 5
+set / interface ethernet-1/1 subinterface 5 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 5 ipv4 address 10.0.5.1/30
+set / interface ethernet-1/1 subinterface 6 type routed
+set / interface ethernet-1/1 subinterface 6 admin-state enable
+set / interface ethernet-1/1 subinterface 6 vlan encap single-tagged vlan-id 6
+set / interface ethernet-1/1 subinterface 6 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 6 ipv4 address 10.0.6.1/30
+set / interface ethernet-1/1 subinterface 7 type routed
+set / interface ethernet-1/1 subinterface 7 admin-state enable
+set / interface ethernet-1/1 subinterface 7 vlan encap single-tagged vlan-id 7
+set / interface ethernet-1/1 subinterface 7 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 7 ipv4 address 10.0.7.1/30
+set / interface ethernet-1/1 subinterface 8 type routed
+set / interface ethernet-1/1 subinterface 8 admin-state enable
+set / interface ethernet-1/1 subinterface 8 vlan encap single-tagged vlan-id 8
+set / interface ethernet-1/1 subinterface 8 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 8 ipv4 address 10.0.8.1/30
+set / interface ethernet-1/1 subinterface 9 type routed
+set / interface ethernet-1/1 subinterface 9 admin-state enable
+set / interface ethernet-1/1 subinterface 9 vlan encap single-tagged vlan-id 9
+set / interface ethernet-1/1 subinterface 9 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 9 ipv4 address 10.0.9.1/30
+set / interface ethernet-1/1 subinterface 10 type routed
+set / interface ethernet-1/1 subinterface 10 admin-state enable
+set / interface ethernet-1/1 subinterface 10 vlan encap single-tagged vlan-id 10
+set / interface ethernet-1/1 subinterface 10 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 10 ipv4 address 10.0.10.1/30
+set / interface ethernet-1/1 subinterface 11 type routed
+set / interface ethernet-1/1 subinterface 11 admin-state enable
+set / interface ethernet-1/1 subinterface 11 vlan encap single-tagged vlan-id 11
+set / interface ethernet-1/1 subinterface 11 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 11 ipv4 address 10.0.11.1/30
+set / interface ethernet-1/1 subinterface 12 type routed
+set / interface ethernet-1/1 subinterface 12 admin-state enable
+set / interface ethernet-1/1 subinterface 12 vlan encap single-tagged vlan-id 12
+set / interface ethernet-1/1 subinterface 12 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 12 ipv4 address 10.0.12.1/30
+set / interface ethernet-1/1 subinterface 13 type routed
+set / interface ethernet-1/1 subinterface 13 admin-state enable
+set / interface ethernet-1/1 subinterface 13 vlan encap single-tagged vlan-id 13
+set / interface ethernet-1/1 subinterface 13 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 13 ipv4 address 10.0.13.1/30
+set / interface ethernet-1/1 subinterface 14 type routed
+set / interface ethernet-1/1 subinterface 14 admin-state enable
+set / interface ethernet-1/1 subinterface 14 vlan encap single-tagged vlan-id 14
+set / interface ethernet-1/1 subinterface 14 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 14 ipv4 address 10.0.14.1/30
+set / interface ethernet-1/1 subinterface 15 type routed
+set / interface ethernet-1/1 subinterface 15 admin-state enable
+set / interface ethernet-1/1 subinterface 15 vlan encap single-tagged vlan-id 15
+set / interface ethernet-1/1 subinterface 15 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 15 ipv4 address 10.0.15.1/30
+set / interface ethernet-1/1 subinterface 16 type routed
+set / interface ethernet-1/1 subinterface 16 admin-state enable
+set / interface ethernet-1/1 subinterface 16 vlan encap single-tagged vlan-id 16
+set / interface ethernet-1/1 subinterface 16 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 16 ipv4 address 10.0.16.1/30
+set / interface ethernet-1/1 subinterface 17 type routed
+set / interface ethernet-1/1 subinterface 17 admin-state enable
+set / interface ethernet-1/1 subinterface 17 vlan encap single-tagged vlan-id 17
+set / interface ethernet-1/1 subinterface 17 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 17 ipv4 address 10.0.17.1/30
+set / interface ethernet-1/1 subinterface 18 type routed
+set / interface ethernet-1/1 subinterface 18 admin-state enable
+set / interface ethernet-1/1 subinterface 18 vlan encap single-tagged vlan-id 18
+set / interface ethernet-1/1 subinterface 18 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 18 ipv4 address 10.0.18.1/30
+set / interface ethernet-1/1 subinterface 19 type routed
+set / interface ethernet-1/1 subinterface 19 admin-state enable
+set / interface ethernet-1/1 subinterface 19 vlan encap single-tagged vlan-id 19
+set / interface ethernet-1/1 subinterface 19 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 19 ipv4 address 10.0.19.1/30
+set / interface ethernet-1/1 subinterface 20 type routed
+set / interface ethernet-1/1 subinterface 20 admin-state enable
+set / interface ethernet-1/1 subinterface 20 vlan encap single-tagged vlan-id 20
+set / interface ethernet-1/1 subinterface 20 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 20 ipv4 address 10.0.20.1/30
+set / interface ethernet-1/1 subinterface 21 type routed
+set / interface ethernet-1/1 subinterface 21 admin-state enable
+set / interface ethernet-1/1 subinterface 21 vlan encap single-tagged vlan-id 21
+set / interface ethernet-1/1 subinterface 21 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 21 ipv4 address 10.0.21.1/30
+set / interface ethernet-1/1 subinterface 22 type routed
+set / interface ethernet-1/1 subinterface 22 admin-state enable
+set / interface ethernet-1/1 subinterface 22 vlan encap single-tagged vlan-id 22
+set / interface ethernet-1/1 subinterface 22 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 22 ipv4 address 10.0.22.1/30
+set / interface ethernet-1/1 subinterface 23 type routed
+set / interface ethernet-1/1 subinterface 23 admin-state enable
+set / interface ethernet-1/1 subinterface 23 vlan encap single-tagged vlan-id 23
+set / interface ethernet-1/1 subinterface 23 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 23 ipv4 address 10.0.23.1/30
+set / interface ethernet-1/1 subinterface 24 type routed
+set / interface ethernet-1/1 subinterface 24 admin-state enable
+set / interface ethernet-1/1 subinterface 24 vlan encap single-tagged vlan-id 24
+set / interface ethernet-1/1 subinterface 24 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 24 ipv4 address 10.0.24.1/30
+set / interface ethernet-1/1 subinterface 25 type routed
+set / interface ethernet-1/1 subinterface 25 admin-state enable
+set / interface ethernet-1/1 subinterface 25 vlan encap single-tagged vlan-id 25
+set / interface ethernet-1/1 subinterface 25 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 25 ipv4 address 10.0.25.1/30
+set / interface ethernet-1/1 subinterface 26 type routed
+set / interface ethernet-1/1 subinterface 26 admin-state enable
+set / interface ethernet-1/1 subinterface 26 vlan encap single-tagged vlan-id 26
+set / interface ethernet-1/1 subinterface 26 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 26 ipv4 address 10.0.26.1/30
+set / interface ethernet-1/1 subinterface 27 type routed
+set / interface ethernet-1/1 subinterface 27 admin-state enable
+set / interface ethernet-1/1 subinterface 27 vlan encap single-tagged vlan-id 27
+set / interface ethernet-1/1 subinterface 27 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 27 ipv4 address 10.0.27.1/30
+set / interface ethernet-1/1 subinterface 28 type routed
+set / interface ethernet-1/1 subinterface 28 admin-state enable
+set / interface ethernet-1/1 subinterface 28 vlan encap single-tagged vlan-id 28
+set / interface ethernet-1/1 subinterface 28 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 28 ipv4 address 10.0.28.1/30
+set / interface ethernet-1/1 subinterface 29 type routed
+set / interface ethernet-1/1 subinterface 29 admin-state enable
+set / interface ethernet-1/1 subinterface 29 vlan encap single-tagged vlan-id 29
+set / interface ethernet-1/1 subinterface 29 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 29 ipv4 address 10.0.29.1/30
+set / interface ethernet-1/1 subinterface 30 type routed
+set / interface ethernet-1/1 subinterface 30 admin-state enable
+set / interface ethernet-1/1 subinterface 30 vlan encap single-tagged vlan-id 30
+set / interface ethernet-1/1 subinterface 30 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 30 ipv4 address 10.0.30.1/30
+set / interface ethernet-1/1 subinterface 31 type routed
+set / interface ethernet-1/1 subinterface 31 admin-state enable
+set / interface ethernet-1/1 subinterface 31 vlan encap single-tagged vlan-id 31
+set / interface ethernet-1/1 subinterface 31 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 31 ipv4 address 10.0.31.1/30
+set / interface ethernet-1/1 subinterface 32 type routed
+set / interface ethernet-1/1 subinterface 32 admin-state enable
+set / interface ethernet-1/1 subinterface 32 vlan encap single-tagged vlan-id 32
+set / interface ethernet-1/1 subinterface 32 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 32 ipv4 address 10.0.32.1/30
+set / interface ethernet-1/1 subinterface 33 type routed
+set / interface ethernet-1/1 subinterface 33 admin-state enable
+set / interface ethernet-1/1 subinterface 33 vlan encap single-tagged vlan-id 33
+set / interface ethernet-1/1 subinterface 33 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 33 ipv4 address 10.0.33.1/30
+set / interface ethernet-1/1 subinterface 34 type routed
+set / interface ethernet-1/1 subinterface 34 admin-state enable
+set / interface ethernet-1/1 subinterface 34 vlan encap single-tagged vlan-id 34
+set / interface ethernet-1/1 subinterface 34 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 34 ipv4 address 10.0.34.1/30
+set / interface ethernet-1/1 subinterface 35 type routed
+set / interface ethernet-1/1 subinterface 35 admin-state enable
+set / interface ethernet-1/1 subinterface 35 vlan encap single-tagged vlan-id 35
+set / interface ethernet-1/1 subinterface 35 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 35 ipv4 address 10.0.35.1/30
+set / interface ethernet-1/1 subinterface 36 type routed
+set / interface ethernet-1/1 subinterface 36 admin-state enable
+set / interface ethernet-1/1 subinterface 36 vlan encap single-tagged vlan-id 36
+set / interface ethernet-1/1 subinterface 36 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 36 ipv4 address 10.0.36.1/30
+set / interface ethernet-1/1 subinterface 37 type routed
+set / interface ethernet-1/1 subinterface 37 admin-state enable
+set / interface ethernet-1/1 subinterface 37 vlan encap single-tagged vlan-id 37
+set / interface ethernet-1/1 subinterface 37 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 37 ipv4 address 10.0.37.1/30
+set / interface ethernet-1/1 subinterface 38 type routed
+set / interface ethernet-1/1 subinterface 38 admin-state enable
+set / interface ethernet-1/1 subinterface 38 vlan encap single-tagged vlan-id 38
+set / interface ethernet-1/1 subinterface 38 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 38 ipv4 address 10.0.38.1/30
+set / interface ethernet-1/1 subinterface 39 type routed
+set / interface ethernet-1/1 subinterface 39 admin-state enable
+set / interface ethernet-1/1 subinterface 39 vlan encap single-tagged vlan-id 39
+set / interface ethernet-1/1 subinterface 39 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 39 ipv4 address 10.0.39.1/30
+set / interface ethernet-1/1 subinterface 40 type routed
+set / interface ethernet-1/1 subinterface 40 admin-state enable
+set / interface ethernet-1/1 subinterface 40 vlan encap single-tagged vlan-id 40
+set / interface ethernet-1/1 subinterface 40 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 40 ipv4 address 10.0.40.1/30
+set / interface ethernet-1/1 subinterface 41 type routed
+set / interface ethernet-1/1 subinterface 41 admin-state enable
+set / interface ethernet-1/1 subinterface 41 vlan encap single-tagged vlan-id 41
+set / interface ethernet-1/1 subinterface 41 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 41 ipv4 address 10.0.41.1/30
+set / interface ethernet-1/1 subinterface 42 type routed
+set / interface ethernet-1/1 subinterface 42 admin-state enable
+set / interface ethernet-1/1 subinterface 42 vlan encap single-tagged vlan-id 42
+set / interface ethernet-1/1 subinterface 42 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 42 ipv4 address 10.0.42.1/30
+set / interface ethernet-1/1 subinterface 43 type routed
+set / interface ethernet-1/1 subinterface 43 admin-state enable
+set / interface ethernet-1/1 subinterface 43 vlan encap single-tagged vlan-id 43
+set / interface ethernet-1/1 subinterface 43 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 43 ipv4 address 10.0.43.1/30
+set / interface ethernet-1/1 subinterface 44 type routed
+set / interface ethernet-1/1 subinterface 44 admin-state enable
+set / interface ethernet-1/1 subinterface 44 vlan encap single-tagged vlan-id 44
+set / interface ethernet-1/1 subinterface 44 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 44 ipv4 address 10.0.44.1/30
+set / interface ethernet-1/1 subinterface 45 type routed
+set / interface ethernet-1/1 subinterface 45 admin-state enable
+set / interface ethernet-1/1 subinterface 45 vlan encap single-tagged vlan-id 45
+set / interface ethernet-1/1 subinterface 45 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 45 ipv4 address 10.0.45.1/30
+set / interface ethernet-1/1 subinterface 46 type routed
+set / interface ethernet-1/1 subinterface 46 admin-state enable
+set / interface ethernet-1/1 subinterface 46 vlan encap single-tagged vlan-id 46
+set / interface ethernet-1/1 subinterface 46 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 46 ipv4 address 10.0.46.1/30
+set / interface ethernet-1/1 subinterface 47 type routed
+set / interface ethernet-1/1 subinterface 47 admin-state enable
+set / interface ethernet-1/1 subinterface 47 vlan encap single-tagged vlan-id 47
+set / interface ethernet-1/1 subinterface 47 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 47 ipv4 address 10.0.47.1/30
+set / interface ethernet-1/1 subinterface 48 type routed
+set / interface ethernet-1/1 subinterface 48 admin-state enable
+set / interface ethernet-1/1 subinterface 48 vlan encap single-tagged vlan-id 48
+set / interface ethernet-1/1 subinterface 48 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 48 ipv4 address 10.0.48.1/30
+set / interface ethernet-1/1 subinterface 49 type routed
+set / interface ethernet-1/1 subinterface 49 admin-state enable
+set / interface ethernet-1/1 subinterface 49 vlan encap single-tagged vlan-id 49
+set / interface ethernet-1/1 subinterface 49 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 49 ipv4 address 10.0.49.1/30
+set / interface ethernet-1/1 subinterface 50 type routed
+set / interface ethernet-1/1 subinterface 50 admin-state enable
+set / interface ethernet-1/1 subinterface 50 vlan encap single-tagged vlan-id 50
+set / interface ethernet-1/1 subinterface 50 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 50 ipv4 address 10.0.50.1/30
+set / interface ethernet-1/1 subinterface 51 type routed
+set / interface ethernet-1/1 subinterface 51 admin-state enable
+set / interface ethernet-1/1 subinterface 51 vlan encap single-tagged vlan-id 51
+set / interface ethernet-1/1 subinterface 51 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 51 ipv4 address 10.0.51.1/30
+set / interface ethernet-1/1 subinterface 52 type routed
+set / interface ethernet-1/1 subinterface 52 admin-state enable
+set / interface ethernet-1/1 subinterface 52 vlan encap single-tagged vlan-id 52
+set / interface ethernet-1/1 subinterface 52 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 52 ipv4 address 10.0.52.1/30
+set / interface ethernet-1/1 subinterface 53 type routed
+set / interface ethernet-1/1 subinterface 53 admin-state enable
+set / interface ethernet-1/1 subinterface 53 vlan encap single-tagged vlan-id 53
+set / interface ethernet-1/1 subinterface 53 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 53 ipv4 address 10.0.53.1/30
+set / interface ethernet-1/1 subinterface 54 type routed
+set / interface ethernet-1/1 subinterface 54 admin-state enable
+set / interface ethernet-1/1 subinterface 54 vlan encap single-tagged vlan-id 54
+set / interface ethernet-1/1 subinterface 54 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 54 ipv4 address 10.0.54.1/30
+set / interface ethernet-1/1 subinterface 55 type routed
+set / interface ethernet-1/1 subinterface 55 admin-state enable
+set / interface ethernet-1/1 subinterface 55 vlan encap single-tagged vlan-id 55
+set / interface ethernet-1/1 subinterface 55 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 55 ipv4 address 10.0.55.1/30
+set / interface ethernet-1/1 subinterface 56 type routed
+set / interface ethernet-1/1 subinterface 56 admin-state enable
+set / interface ethernet-1/1 subinterface 56 vlan encap single-tagged vlan-id 56
+set / interface ethernet-1/1 subinterface 56 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 56 ipv4 address 10.0.56.1/30
+set / interface ethernet-1/1 subinterface 57 type routed
+set / interface ethernet-1/1 subinterface 57 admin-state enable
+set / interface ethernet-1/1 subinterface 57 vlan encap single-tagged vlan-id 57
+set / interface ethernet-1/1 subinterface 57 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 57 ipv4 address 10.0.57.1/30
+set / interface ethernet-1/1 subinterface 58 type routed
+set / interface ethernet-1/1 subinterface 58 admin-state enable
+set / interface ethernet-1/1 subinterface 58 vlan encap single-tagged vlan-id 58
+set / interface ethernet-1/1 subinterface 58 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 58 ipv4 address 10.0.58.1/30
+set / interface ethernet-1/1 subinterface 59 type routed
+set / interface ethernet-1/1 subinterface 59 admin-state enable
+set / interface ethernet-1/1 subinterface 59 vlan encap single-tagged vlan-id 59
+set / interface ethernet-1/1 subinterface 59 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 59 ipv4 address 10.0.59.1/30
+set / interface ethernet-1/1 subinterface 60 type routed
+set / interface ethernet-1/1 subinterface 60 admin-state enable
+set / interface ethernet-1/1 subinterface 60 vlan encap single-tagged vlan-id 60
+set / interface ethernet-1/1 subinterface 60 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 60 ipv4 address 10.0.60.1/30
+set / interface ethernet-1/1 subinterface 61 type routed
+set / interface ethernet-1/1 subinterface 61 admin-state enable
+set / interface ethernet-1/1 subinterface 61 vlan encap single-tagged vlan-id 61
+set / interface ethernet-1/1 subinterface 61 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 61 ipv4 address 10.0.61.1/30
+set / interface ethernet-1/1 subinterface 62 type routed
+set / interface ethernet-1/1 subinterface 62 admin-state enable
+set / interface ethernet-1/1 subinterface 62 vlan encap single-tagged vlan-id 62
+set / interface ethernet-1/1 subinterface 62 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 62 ipv4 address 10.0.62.1/30
+set / interface ethernet-1/1 subinterface 63 type routed
+set / interface ethernet-1/1 subinterface 63 admin-state enable
+set / interface ethernet-1/1 subinterface 63 vlan encap single-tagged vlan-id 63
+set / interface ethernet-1/1 subinterface 63 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 63 ipv4 address 10.0.63.1/30
+set / interface ethernet-1/1 subinterface 64 type routed
+set / interface ethernet-1/1 subinterface 64 admin-state enable
+set / interface ethernet-1/1 subinterface 64 vlan encap single-tagged vlan-id 64
+set / interface ethernet-1/1 subinterface 64 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 64 ipv4 address 10.0.64.1/30
+set / interface ethernet-1/1 subinterface 65 type routed
+set / interface ethernet-1/1 subinterface 65 admin-state enable
+set / interface ethernet-1/1 subinterface 65 vlan encap single-tagged vlan-id 65
+set / interface ethernet-1/1 subinterface 65 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 65 ipv4 address 10.0.65.1/30
+set / interface ethernet-1/1 subinterface 66 type routed
+set / interface ethernet-1/1 subinterface 66 admin-state enable
+set / interface ethernet-1/1 subinterface 66 vlan encap single-tagged vlan-id 66
+set / interface ethernet-1/1 subinterface 66 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 66 ipv4 address 10.0.66.1/30
+set / interface ethernet-1/1 subinterface 67 type routed
+set / interface ethernet-1/1 subinterface 67 admin-state enable
+set / interface ethernet-1/1 subinterface 67 vlan encap single-tagged vlan-id 67
+set / interface ethernet-1/1 subinterface 67 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 67 ipv4 address 10.0.67.1/30
+set / interface ethernet-1/1 subinterface 68 type routed
+set / interface ethernet-1/1 subinterface 68 admin-state enable
+set / interface ethernet-1/1 subinterface 68 vlan encap single-tagged vlan-id 68
+set / interface ethernet-1/1 subinterface 68 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 68 ipv4 address 10.0.68.1/30
+set / interface ethernet-1/1 subinterface 69 type routed
+set / interface ethernet-1/1 subinterface 69 admin-state enable
+set / interface ethernet-1/1 subinterface 69 vlan encap single-tagged vlan-id 69
+set / interface ethernet-1/1 subinterface 69 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 69 ipv4 address 10.0.69.1/30
+set / interface ethernet-1/1 subinterface 70 type routed
+set / interface ethernet-1/1 subinterface 70 admin-state enable
+set / interface ethernet-1/1 subinterface 70 vlan encap single-tagged vlan-id 70
+set / interface ethernet-1/1 subinterface 70 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 70 ipv4 address 10.0.70.1/30
+set / interface ethernet-1/1 subinterface 71 type routed
+set / interface ethernet-1/1 subinterface 71 admin-state enable
+set / interface ethernet-1/1 subinterface 71 vlan encap single-tagged vlan-id 71
+set / interface ethernet-1/1 subinterface 71 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 71 ipv4 address 10.0.71.1/30
+set / interface ethernet-1/1 subinterface 72 type routed
+set / interface ethernet-1/1 subinterface 72 admin-state enable
+set / interface ethernet-1/1 subinterface 72 vlan encap single-tagged vlan-id 72
+set / interface ethernet-1/1 subinterface 72 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 72 ipv4 address 10.0.72.1/30
+set / interface ethernet-1/1 subinterface 73 type routed
+set / interface ethernet-1/1 subinterface 73 admin-state enable
+set / interface ethernet-1/1 subinterface 73 vlan encap single-tagged vlan-id 73
+set / interface ethernet-1/1 subinterface 73 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 73 ipv4 address 10.0.73.1/30
+set / interface ethernet-1/1 subinterface 74 type routed
+set / interface ethernet-1/1 subinterface 74 admin-state enable
+set / interface ethernet-1/1 subinterface 74 vlan encap single-tagged vlan-id 74
+set / interface ethernet-1/1 subinterface 74 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 74 ipv4 address 10.0.74.1/30
+set / interface ethernet-1/1 subinterface 75 type routed
+set / interface ethernet-1/1 subinterface 75 admin-state enable
+set / interface ethernet-1/1 subinterface 75 vlan encap single-tagged vlan-id 75
+set / interface ethernet-1/1 subinterface 75 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 75 ipv4 address 10.0.75.1/30
+set / interface ethernet-1/1 subinterface 76 type routed
+set / interface ethernet-1/1 subinterface 76 admin-state enable
+set / interface ethernet-1/1 subinterface 76 vlan encap single-tagged vlan-id 76
+set / interface ethernet-1/1 subinterface 76 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 76 ipv4 address 10.0.76.1/30
+set / interface ethernet-1/1 subinterface 77 type routed
+set / interface ethernet-1/1 subinterface 77 admin-state enable
+set / interface ethernet-1/1 subinterface 77 vlan encap single-tagged vlan-id 77
+set / interface ethernet-1/1 subinterface 77 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 77 ipv4 address 10.0.77.1/30
+set / interface ethernet-1/1 subinterface 78 type routed
+set / interface ethernet-1/1 subinterface 78 admin-state enable
+set / interface ethernet-1/1 subinterface 78 vlan encap single-tagged vlan-id 78
+set / interface ethernet-1/1 subinterface 78 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 78 ipv4 address 10.0.78.1/30
+set / interface ethernet-1/1 subinterface 79 type routed
+set / interface ethernet-1/1 subinterface 79 admin-state enable
+set / interface ethernet-1/1 subinterface 79 vlan encap single-tagged vlan-id 79
+set / interface ethernet-1/1 subinterface 79 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 79 ipv4 address 10.0.79.1/30
+set / interface ethernet-1/1 subinterface 80 type routed
+set / interface ethernet-1/1 subinterface 80 admin-state enable
+set / interface ethernet-1/1 subinterface 80 vlan encap single-tagged vlan-id 80
+set / interface ethernet-1/1 subinterface 80 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 80 ipv4 address 10.0.80.1/30
+set / interface ethernet-1/1 subinterface 81 type routed
+set / interface ethernet-1/1 subinterface 81 admin-state enable
+set / interface ethernet-1/1 subinterface 81 vlan encap single-tagged vlan-id 81
+set / interface ethernet-1/1 subinterface 81 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 81 ipv4 address 10.0.81.1/30
+set / interface ethernet-1/1 subinterface 82 type routed
+set / interface ethernet-1/1 subinterface 82 admin-state enable
+set / interface ethernet-1/1 subinterface 82 vlan encap single-tagged vlan-id 82
+set / interface ethernet-1/1 subinterface 82 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 82 ipv4 address 10.0.82.1/30
+set / interface ethernet-1/1 subinterface 83 type routed
+set / interface ethernet-1/1 subinterface 83 admin-state enable
+set / interface ethernet-1/1 subinterface 83 vlan encap single-tagged vlan-id 83
+set / interface ethernet-1/1 subinterface 83 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 83 ipv4 address 10.0.83.1/30
+set / interface ethernet-1/1 subinterface 84 type routed
+set / interface ethernet-1/1 subinterface 84 admin-state enable
+set / interface ethernet-1/1 subinterface 84 vlan encap single-tagged vlan-id 84
+set / interface ethernet-1/1 subinterface 84 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 84 ipv4 address 10.0.84.1/30
+set / interface ethernet-1/1 subinterface 85 type routed
+set / interface ethernet-1/1 subinterface 85 admin-state enable
+set / interface ethernet-1/1 subinterface 85 vlan encap single-tagged vlan-id 85
+set / interface ethernet-1/1 subinterface 85 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 85 ipv4 address 10.0.85.1/30
+set / interface ethernet-1/1 subinterface 86 type routed
+set / interface ethernet-1/1 subinterface 86 admin-state enable
+set / interface ethernet-1/1 subinterface 86 vlan encap single-tagged vlan-id 86
+set / interface ethernet-1/1 subinterface 86 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 86 ipv4 address 10.0.86.1/30
+set / interface ethernet-1/1 subinterface 87 type routed
+set / interface ethernet-1/1 subinterface 87 admin-state enable
+set / interface ethernet-1/1 subinterface 87 vlan encap single-tagged vlan-id 87
+set / interface ethernet-1/1 subinterface 87 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 87 ipv4 address 10.0.87.1/30
+set / interface ethernet-1/1 subinterface 88 type routed
+set / interface ethernet-1/1 subinterface 88 admin-state enable
+set / interface ethernet-1/1 subinterface 88 vlan encap single-tagged vlan-id 88
+set / interface ethernet-1/1 subinterface 88 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 88 ipv4 address 10.0.88.1/30
+set / interface ethernet-1/1 subinterface 89 type routed
+set / interface ethernet-1/1 subinterface 89 admin-state enable
+set / interface ethernet-1/1 subinterface 89 vlan encap single-tagged vlan-id 89
+set / interface ethernet-1/1 subinterface 89 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 89 ipv4 address 10.0.89.1/30
+set / interface ethernet-1/1 subinterface 90 type routed
+set / interface ethernet-1/1 subinterface 90 admin-state enable
+set / interface ethernet-1/1 subinterface 90 vlan encap single-tagged vlan-id 90
+set / interface ethernet-1/1 subinterface 90 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 90 ipv4 address 10.0.90.1/30
+set / interface ethernet-1/1 subinterface 91 type routed
+set / interface ethernet-1/1 subinterface 91 admin-state enable
+set / interface ethernet-1/1 subinterface 91 vlan encap single-tagged vlan-id 91
+set / interface ethernet-1/1 subinterface 91 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 91 ipv4 address 10.0.91.1/30
+set / interface ethernet-1/1 subinterface 92 type routed
+set / interface ethernet-1/1 subinterface 92 admin-state enable
+set / interface ethernet-1/1 subinterface 92 vlan encap single-tagged vlan-id 92
+set / interface ethernet-1/1 subinterface 92 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 92 ipv4 address 10.0.92.1/30
+set / interface ethernet-1/1 subinterface 93 type routed
+set / interface ethernet-1/1 subinterface 93 admin-state enable
+set / interface ethernet-1/1 subinterface 93 vlan encap single-tagged vlan-id 93
+set / interface ethernet-1/1 subinterface 93 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 93 ipv4 address 10.0.93.1/30
+set / interface ethernet-1/1 subinterface 94 type routed
+set / interface ethernet-1/1 subinterface 94 admin-state enable
+set / interface ethernet-1/1 subinterface 94 vlan encap single-tagged vlan-id 94
+set / interface ethernet-1/1 subinterface 94 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 94 ipv4 address 10.0.94.1/30
+set / interface ethernet-1/1 subinterface 95 type routed
+set / interface ethernet-1/1 subinterface 95 admin-state enable
+set / interface ethernet-1/1 subinterface 95 vlan encap single-tagged vlan-id 95
+set / interface ethernet-1/1 subinterface 95 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 95 ipv4 address 10.0.95.1/30
+set / interface ethernet-1/1 subinterface 96 type routed
+set / interface ethernet-1/1 subinterface 96 admin-state enable
+set / interface ethernet-1/1 subinterface 96 vlan encap single-tagged vlan-id 96
+set / interface ethernet-1/1 subinterface 96 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 96 ipv4 address 10.0.96.1/30
+set / interface ethernet-1/1 subinterface 97 type routed
+set / interface ethernet-1/1 subinterface 97 admin-state enable
+set / interface ethernet-1/1 subinterface 97 vlan encap single-tagged vlan-id 97
+set / interface ethernet-1/1 subinterface 97 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 97 ipv4 address 10.0.97.1/30
+set / interface ethernet-1/1 subinterface 98 type routed
+set / interface ethernet-1/1 subinterface 98 admin-state enable
+set / interface ethernet-1/1 subinterface 98 vlan encap single-tagged vlan-id 98
+set / interface ethernet-1/1 subinterface 98 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 98 ipv4 address 10.0.98.1/30
+set / interface ethernet-1/1 subinterface 99 type routed
+set / interface ethernet-1/1 subinterface 99 admin-state enable
+set / interface ethernet-1/1 subinterface 99 vlan encap single-tagged vlan-id 99
+set / interface ethernet-1/1 subinterface 99 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 99 ipv4 address 10.0.99.1/30
+set / interface ethernet-1/1 subinterface 100 type routed
+set / interface ethernet-1/1 subinterface 100 admin-state enable
+set / interface ethernet-1/1 subinterface 100 vlan encap single-tagged vlan-id 100
+set / interface ethernet-1/1 subinterface 100 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 100 ipv4 address 10.0.100.1/30

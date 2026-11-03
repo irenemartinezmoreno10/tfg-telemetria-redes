@@ -1,0 +1,15 @@
+# Startup-config de router2 (topologia grafana): ethernet-1/1 con la IPv4 10.0.0.2/30 y traps SNMP a Telegraf (172.20.20.13)
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 subinterface 0 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ipv4 address 10.0.0.2/30
+set / network-instance default type default
+set / network-instance default interface ethernet-1/1.0
+set / system snmp access-group SNMPv2-RO-Community admin-state enable
+set / system snmp network-instance mgmt admin-state enable
+set / system snmp trap-group TELEGRAF admin-state enable
+set / system snmp trap-group TELEGRAF network-instance mgmt
+set / system snmp trap-group TELEGRAF destination telegraf admin-state enable
+set / system snmp trap-group TELEGRAF destination telegraf address 172.20.20.13
+set / system snmp trap-group TELEGRAF destination telegraf security-level no-auth-no-priv
+set / system snmp trap-group TELEGRAF destination telegraf community-entry c1 community public

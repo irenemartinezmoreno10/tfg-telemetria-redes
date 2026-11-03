@@ -1,0 +1,10 @@
+name: srl-small
+
+# Topología SMALL: 1 router SR Linux con 10 subinterfaces sobre ethernet-1/1 (Experimento 1)
+topology:
+  nodes:
+    router1:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/subif-10.cli
+      mgmt-ipv4: 172.20.20.2

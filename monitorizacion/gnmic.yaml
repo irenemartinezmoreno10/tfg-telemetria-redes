@@ -1,0 +1,34 @@
+# Configuración de gnmic (colector): se suscribe a los dos routers y escribe en InfluxDB
+# - estado: oper-state de ethernet-1/1 en modo on-change
+# - tráfico: contadores in/out-octets de ethernet-1/1 en modo sample cada 5 s
+
+username: admin
+password: NokiaSrl1!
+skip-verify: true
+encoding: json_ietf
+
+targets:
+  172.20.20.2:            # router1 (puerto 57400 por defecto)
+  172.20.20.3:            # router2
+
+subscriptions:
+  estado:                 # up/down
+    paths:
+      - /interface[name=ethernet-1/1]/oper-state
+    stream-mode: on-change
+
+  trafico:
+    paths:
+      - /interface[name=ethernet-1/1]/statistics/in-octets
+      - /interface[name=ethernet-1/1]/statistics/out-octets
+    stream-mode: sample
+    sample-interval: 5s
+
+outputs:
+  influx:
+    type: influxdb
+    url: http://172.20.20.10:8086     # IP fija de influxdb en la topología
+    org: tfg
+    bucket: telemetria
+    token: tfg-token
+    flush-timer: 1s

@@ -1,0 +1,15 @@
+# Containerlab (directorios que genera al desplegar) e instaladores
+clab-*/
+*.deb
+
+# Capturas de los experimentos
+*.pcap
+
+# Python
+__pycache__/
+*.pyc
+
+# Ficheros personales (no forman parte de la entrega)
+TFG.pdf
+PLAN.md
+notas/

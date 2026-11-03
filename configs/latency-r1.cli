@@ -1,0 +1,10 @@
+# Startup-config de router1 (topologia latency): activa ethernet-1/1, el agente SNMP y el envio de traps a la VM (172.20.20.1)
+set / interface ethernet-1/1 admin-state enable
+set / system snmp access-group SNMPv2-RO-Community admin-state enable
+set / system snmp network-instance mgmt admin-state enable
+set / system snmp trap-group VM admin-state enable
+set / system snmp trap-group VM network-instance mgmt
+set / system snmp trap-group VM destination snmptrapd admin-state enable
+set / system snmp trap-group VM destination snmptrapd address 172.20.20.1
+set / system snmp trap-group VM destination snmptrapd security-level no-auth-no-priv
+set / system snmp trap-group VM destination snmptrapd community-entry c1 community public

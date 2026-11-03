@@ -1,0 +1,60 @@
+name: srl-grafana
+
+# Topología GRAFANA: dos routers enlazados + colectores (gnmic por gNMI y Telegraf por SNMP), base de datos (InfluxDB) y panel (Grafana)
+topology:
+  nodes:
+    router1:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/grafana-r1.cli
+      mgmt-ipv4: 172.20.20.2
+    router2:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/grafana-r2.cli
+      mgmt-ipv4: 172.20.20.3
+
+    influxdb:
+      kind: linux
+      image: influxdb:2.8
+      mgmt-ipv4: 172.20.20.10
+      ports:
+        - 8086:8086
+      env:
+        DOCKER_INFLUXDB_INIT_MODE: setup
+        DOCKER_INFLUXDB_INIT_USERNAME: admin
+        DOCKER_INFLUXDB_INIT_PASSWORD: admin12345
+        DOCKER_INFLUXDB_INIT_ORG: tfg
+        DOCKER_INFLUXDB_INIT_BUCKET: telemetria
+        DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: tfg-token
+
+    grafana:
+      kind: linux
+      image: grafana/grafana:11.2.0
+      mgmt-ipv4: 172.20.20.11
+      ports:
+        - 3000:3000
+      binds:
+        - monitorizacion/grafana-datasource.yaml:/etc/grafana/provisioning/datasources/influxdb.yaml:ro
+        - monitorizacion/grafana-dashboards.yaml:/etc/grafana/provisioning/dashboards/tfg.yaml:ro
+        - monitorizacion/dashboard.json:/var/lib/grafana/dashboards/dashboard.json:ro
+        - monitorizacion/alert_policy.json:/etc/grafana/provisioning/alerting/alerta.json:ro
+
+    gnmic:
+      kind: linux
+      image: ghcr.io/openconfig/gnmic:0.46.0
+      mgmt-ipv4: 172.20.20.12
+      binds:
+        - monitorizacion/gnmic.yaml:/app/gnmic.yaml:ro
+      cmd: subscribe --config /app/gnmic.yaml
+
+    telegraf:
+      kind: linux
+      image: telegraf:1.32.0
+      mgmt-ipv4: 172.20.20.13
+      binds:
+        - monitorizacion/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+        - monitorizacion/mibs:/etc/telegraf/mibs:ro
+
+  links:
+    - endpoints: ["router1:e1-1", "router2:e1-1"]

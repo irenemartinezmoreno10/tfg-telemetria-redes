@@ -1,0 +1,10 @@
+name: srl-large
+
+# Topología LARGE: 1 router SR Linux con 100 subinterfaces sobre ethernet-1/1 (Experimentos 1 y 3)
+topology:
+  nodes:
+    router1:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/subif-100.cli
+      mgmt-ipv4: 172.20.20.2

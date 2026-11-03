@@ -1,0 +1,10 @@
+name: srl-medium
+
+# Topología MEDIUM: 1 router SR Linux con 50 subinterfaces sobre ethernet-1/1 (Experimento 1)
+topology:
+  nodes:
+    router1:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/subif-50.cli
+      mgmt-ipv4: 172.20.20.2

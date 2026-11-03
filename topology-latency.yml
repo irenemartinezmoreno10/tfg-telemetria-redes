@@ -1,0 +1,17 @@
+name: srl-latency
+
+# Topología LATENCY: dos routers enlazados por ethernet-1/1; en router2 se provoca la caída (Experimento 2)
+topology:
+  nodes:
+    router1:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/latency-r1.cli
+      mgmt-ipv4: 172.20.20.2
+    router2:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.4
+      startup-config: configs/latency-r2.cli
+      mgmt-ipv4: 172.20.20.3
+  links:
+    - endpoints: ["router1:e1-1", "router2:e1-1"]

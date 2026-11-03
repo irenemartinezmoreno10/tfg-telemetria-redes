@@ -1,0 +1,2 @@
+# Startup-config de router2 (topologia latency): solo activa ethernet-1/1
+set / interface ethernet-1/1 admin-state enable
