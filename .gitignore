@@ -1,4 +1,4 @@
-# Containerlab (directorios que genera al desplegar) e instaladores
+# Containerlab e instaladores
 clab-*/
 *.deb
 
@@ -9,7 +9,5 @@ clab-*/
 __pycache__/
 *.pyc
 
-# Ficheros personales (no forman parte de la entrega)
-TFG.pdf
-PLAN.md
+# Ficheros personales 
 notas/
